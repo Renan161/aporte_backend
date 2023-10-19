@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "PasswordGenerator",
+            "request": "launch",
+            "mainClass": "com.financeiro.financeiro.PasswordGenerator",
+            "projectName": "Financeiro"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-AuthApplication<Financeiro>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.financeiro.financeiro.AuthApplication",
+            "projectName": "Financeiro",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=52672 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=Financeiro"
+        }
+    ]
+}
